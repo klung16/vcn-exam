@@ -1,9 +1,9 @@
 Enter the user information
-
+<hr>
 <%= form_for @user do |f| %>
-  Full Name: <%= f.text_field :name %>
-  Email Address: <%= f.text_field :email %>
-  Mailing Address: <%= f.text_field :address %>
-  Message: <%= f.text_field :message %>
-  SUBMIT! <%= f.submit %>
+  Full Name: <%= f.text_field :name %> <br/>
+  Email Address: <%= f.text_field :email %> <br/>
+  Mailing Address: <%= f.text_field :address %> <br/>
+  Message: <%= f.text_field :message %> <br/>
+  <%= f.submit "SUBMIT!" %>
 <% end %>
