@@ -1,7 +1,10 @@
-Display the user's information
-<hr>
-
-Name: <%= @users.order("created_at").last.name %> <br/>
-Email Address: <%= @users.order("created_at").last.email %> <br/>
-Mailing Address: <%= @users.order("created_at").last.address %> <br/>
-Message: <%= @users.order("created_at").last.message %>
+<%= unless @users.empty %>
+  Display the last user's information:
+  <hr>
+  Name: <%= @users.order("created_at").last.name %> <br/>
+  Email Address: <%= @users.order("created_at").last.email %> <br/>
+  Mailing Address: <%= @users.order("created_at").last.address %> <br/>
+  Message: <%= @users.order("created_at").last.message %>
+<%= else %>
+  <%= link_to "Enter new user information!", "users/new" %>
+<% end %>
