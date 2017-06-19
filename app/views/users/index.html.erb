@@ -1,0 +1,8 @@
+Display the user's information
+<hr>
+
+<%= user = @users.order("created_at").last %>
+Name: <%= user.name %>
+Email Address: <%= user.email %>
+Mailing Address: <%= user.address %>
+Message: <%= user.message %>
