@@ -2,14 +2,16 @@
 <hr>
 <%= form_for @user do |f| %>
   Full Name: <%= f.text_field :name %> <br/><br/>
-  Email Address: <%= f.text_field :email %>
+  Email Address: <%= f.text_field :email %> <br/><br/>
 
+<%-# the if false is here so that I can block comment -%>
+<% if false %>
   <% if !@email_valid %>
     <b>ERROR: EMAIL INVALID!</b>
     <% @email_valid = true %>
   <% end %>
-  <br/><br/>
-  
+<% end %>
+
   Mailing Address: <%= f.text_field :address %> <br/><br/>
   Message: <%= f.text_field :message %> <br/>
 
