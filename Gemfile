@@ -51,3 +51,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Allow Stripe to be used for credit card billing
 gem 'stripe'
+
+# Setup geocoding for use in Google Maps
+gem 'geocoder'
+
+# Allows for use of Google Maps
+gem 'gmaps4rails'
