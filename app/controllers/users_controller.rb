@@ -4,7 +4,7 @@ class UsersController < ApplicationController
     @hash = Gmaps4rails.build_markers(@users.order("created_at").last) do |user, marker|
       marker.lat user.latitude
       marker.lng user.longitude
-      marker.infowindow "#{user.name}\n#{user.address}"
+      marker.infowindow "#{user.name} - #{user.address}"
     end
   end
   

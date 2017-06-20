@@ -1,12 +1,13 @@
-<%= link_to "Enter new user information!", "/users/new" %> <br/>
+<h3><%= link_to "Enter new user information!", "/users/new" %></h3>
 <hr>
 <% if !@users.empty? %>
-  Display the last user's information:
+  <h3>Display the last user's information:</h3>
   <hr>
-  Name: <%= @users.order("created_at").last.name %> <br/>
-  Email Address: <%= @users.order("created_at").last.email %> <br/>
-  Mailing Address: <%= @users.order("created_at").last.address %> <br/>
-  Message: <%= @users.order("created_at").last.message %>
+  <% user = @users.order("created_at").last %>
+  Name: <%=user.name.titleize%> <br/>
+  Email Address: <%=user.email%> <br/>
+  Mailing Address: <%=user.address.titleize%> <br/>
+  Message: <%=user.message.titleize%>
 
   <div style='width: 800px;'>
     <div id="map" style='width: 800px; height: 400px;'></div>
@@ -25,5 +26,4 @@
       handler.getMap().setZoom(15);
     });
   </script>
-
 <% end %>

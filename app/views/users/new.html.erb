@@ -1,4 +1,4 @@
-Enter the user information
+<h3>Enter the user information</h3>
 <hr>
 <%= form_for @user do |f| %>
   Full Name: <%= f.text_field :name %> <br/><br/>
@@ -16,11 +16,10 @@ Enter the user information
       <span>Amount: $5.00</span>
     </label>
   </article>
-  <br/><br/>
+  <br/>
   <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
           data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
           data-description="User Signup"
           data-amount="500"
           data-locale="auto"></script>
-
 <% end %>
