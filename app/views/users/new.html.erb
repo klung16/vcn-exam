@@ -1,11 +1,11 @@
 Enter the user information
 <hr>
 <%= form_for @user do |f| %>
-  Full Name: <%= f.text_field :name %> <br/>
-  Email Address: <%= f.text_field :email %> <br/>
-  Mailing Address: <%= f.text_field :address %> <br/>
+  Full Name: <%= f.text_field :name %> <br/><br/>
+  Email Address: <%= f.text_field :email %> <br/><br/>
+  Mailing Address: <%= f.text_field :address %> <br/><br/>
   Message: <%= f.text_field :message %> <br/>
-
+<hr>
   <article>
     <% if flash[:error].present? %>
       <div id="error_explanation">
@@ -16,10 +16,11 @@ Enter the user information
       <span>Amount: $5.00</span>
     </label>
   </article>
-
+  <br/><br/>
   <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
           data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-          data-description="A month's subscription"
+          data-description="User Signup"
           data-amount="500"
           data-locale="auto"></script>
+
 <% end %>

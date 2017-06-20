@@ -15,7 +15,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     
-    #####
+    ####
     # Stripe code from https://stripe.com/docs/checkout/rails
     #####
 
