@@ -16,6 +16,8 @@ ActiveRecord::Schema.define(version: 20170619131745) do
     t.string "name"
     t.string "email"
     t.string "address"
+    t.float "latitude"
+    t.float "longitude"
     t.string "message"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
