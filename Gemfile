@@ -57,3 +57,6 @@ gem 'geocoder'
 
 # Allows for use of Google Maps
 gem 'gmaps4rails'
+
+# Used for email validation
+gem 'validates_email_format_of'

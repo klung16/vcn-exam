@@ -2,9 +2,17 @@
 <hr>
 <%= form_for @user do |f| %>
   Full Name: <%= f.text_field :name %> <br/><br/>
-  Email Address: <%= f.text_field :email %> <br/><br/>
+  Email Address: <%= f.text_field :email %>
+
+  <% if !@email_valid %>
+    <b>ERROR: EMAIL INVALID!</b>
+    <% @email_valid = true %>
+  <% end %>
+  <br/><br/>
+  
   Mailing Address: <%= f.text_field :address %> <br/><br/>
   Message: <%= f.text_field :message %> <br/>
+
 <hr>
   <article>
     <% if flash[:error].present? %>
@@ -13,11 +21,12 @@
       </div>
     <% end %>
     <label class="amount">
-      <span>Amount: $5.00</span>
+      <span>Would you like to donate $5 to the Vancouver Community Network?</span>
     </label>
   </article>
   <br/>
-  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+
+<script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
           data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
           data-description="User Signup"
           data-amount="500"

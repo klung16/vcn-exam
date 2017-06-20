@@ -15,6 +15,10 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     
+    if !(ValidatesEmailFormatOf::validate_email_format(@user.email).nil?)
+      redirect_to "users/new"
+    end
+
     ####
     # Stripe code from https://stripe.com/docs/checkout/rails
     #####
@@ -23,7 +27,7 @@ class UsersController < ApplicationController
     @amount = 500
 
     customer = Stripe::Customer.create(
-      :email => params[:stripeEmail],
+      :email => @user.email, #params[:stripeEmail],
       :source  => params[:stripeToken]
     )
 
@@ -41,11 +45,11 @@ class UsersController < ApplicationController
     if @user.save
       redirect_to "/users"
     end
-  
+ 
 
   rescue Stripe::CardError => e
     flash[:error] = e.message
-    redirect_to new_charge_path
+    redirect_to "users/new"
   end
 
   private
