@@ -51,17 +51,10 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-# Allow Stripe to be used for credit card billing
+# Gems which were added by Kai for use in this app
 gem 'stripe'
-
-# Setup geocoding for use in Google Maps
 gem 'geocoder'
-
-# Allows for use of Google Maps
 gem 'gmaps4rails'
-
-# Used for email validation
 gem 'validates_email_format_of'
-
-# Used for testing
 gem 'rspec-rails', '~> 3.6'
+gem 'factory_girl'
