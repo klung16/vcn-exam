@@ -1,0 +1,263 @@
+[33mcommit b1bd291ddfb8a597bd5fcbd941ac4e439d1ca0d0[m
+Author: klung16 <klung16@gmail.com>
+Date:   Mon Jun 26 11:21:13 2017 -0700
+
+    Setup rspec-rails for testing
+
+[33mcommit 495a8f9f35fd341b5959b5a9de341589abcf9c76[m
+Author: klung16 <klung16@gmail.com>
+Date:   Mon Jun 26 10:42:55 2017 -0700
+
+    Minor fixes to code
+
+[33mcommit 53befdf345d2dbe3b0736e2f01dc9597f79c6813[m
+Author: Kai Lung <klung16@users.noreply.github.com>
+Date:   Thu Jun 22 11:25:43 2017 -0700
+
+    Update README.md
+
+[33mcommit 9a3ce4ee51bae75833914a1564b32542ff79cae2[m
+Author: Kai Lung <klung16@users.noreply.github.com>
+Date:   Thu Jun 22 11:24:15 2017 -0700
+
+    Update README.md
+
+[33mcommit 189ba27a066033b8f6f489add4d93cd3c7695e5a[m
+Author: Kai Lung <klung16@gmail.com>
+Date:   Tue Jun 20 04:09:55 2017 -0700
+
+    Fixed issue with database not keeping latitude/longitude fields
+
+[33mcommit f7f2c8e43a138899d7d366beee8cb5c5a00ab7a6[m
+Author: Kai Lung <klung16@gmail.com>
+Date:   Tue Jun 20 03:41:13 2017 -0700
+
+    Edited Procfile
+
+[33mcommit 96940698c6b38d312dcf4888d2642f46dbc0ae5c[m
+Author: Kai Lung <klung16@gmail.com>
+Date:   Tue Jun 20 03:25:57 2017 -0700
+
+    Reinstalled bundles
+
+[33mcommit 05d90b25d2ea6a6b8cc1904a35dbc4a82ff4d80f[m
+Author: Kai Lung <klung16@gmail.com>
+Date:   Tue Jun 20 03:24:02 2017 -0700
+
+    Clear database
+
+[33mcommit 80fa0c72083caac5cb353cd1d6736044d6a4818a[m
+Author: Kai Lung <klung16@gmail.com>
+Date:   Tue Jun 20 03:19:06 2017 -0700
+
+    Added procfile so heroku knows how to run project
+
+[33mcommit 86d1bd46710873520d064b5587b4f21ed95e2dab[m
+Author: Kai Lung <klung16@gmail.com>
+Date:   Tue Jun 20 03:00:23 2017 -0700
+
+    Switched database from sqlite3 to postgresql in order for heroku to work
+
+[33mcommit b27329e14834197577720d02a0d2e40e725adc06[m
+Author: Kai Lung <klung16@gmail.com>
+Date:   Tue Jun 20 00:45:25 2017 -0700
+
+    Minor UI edits
+
+[33mcommit 6e19a3bbd59944deff37f725f3c180733378a990[m
+Author: Kai Lung <klung16@gmail.com>
+Date:   Tue Jun 20 00:40:59 2017 -0700
+
+    Reset database
+
+[33mcommit 9bd061a8f856e94ec3517611772c40183914ebae[m
+Author: Kai Lung <klung16@gmail.com>
+Date:   Tue Jun 20 00:19:26 2017 -0700
+
+    Implemented email verification
+
+[33mcommit 943837c8c4a78a2b832b20a7c4ceafc3140b2107[m
+Author: Kai Lung <klung16@gmail.com>
+Date:   Mon Jun 19 23:23:48 2017 -0700
+
+    Minor UI fixes
+
+[33mcommit 5de8cbd19540b033a4627d2e5f185db52d9b8208[m
+Author: Kai Lung <klung16@gmail.com>
+Date:   Mon Jun 19 22:58:58 2017 -0700
+
+    Minor fix of UI on form page
+
+[33mcommit 8799a755267726a318fb139009103c484bc7bd27[m
+Author: Kai Lung <klung16@gmail.com>
+Date:   Mon Jun 19 22:22:20 2017 -0700
+
+    Edit infowindow and default zoom level of map
+
+[33mcommit 3ecf10b660182439c9d15328f120482b1498716d[m
+Author: Kai Lung <klung16@gmail.com>
+Date:   Mon Jun 19 21:26:32 2017 -0700
+
+    Fixed so that only the last entry shows up on the map
+
+[33mcommit f3039dfe1eda9acf8f5a8a89db4bd7b94f182b74[m
+Author: Kai Lung <klung16@gmail.com>
+Date:   Mon Jun 19 21:19:58 2017 -0700
+
+    Implemented javascript code to allow map to show up on view
+
+[33mcommit b899f853bf0009f63e938f4551c38a4460b63cfb[m
+Author: Kai Lung <klung16@gmail.com>
+Date:   Mon Jun 19 20:52:35 2017 -0700
+
+    Setup javascript assets
+
+[33mcommit 42ba9736c1a7795e8c568edcb9d6b2c47a606341[m
+Author: Kai Lung <klung16@gmail.com>
+Date:   Mon Jun 19 20:50:39 2017 -0700
+
+    Added underscore.js and setup javascript assets
+
+[33mcommit 53b4ed377f1c0dfae2e331b7c6c1b1f80dfcd28b[m
+Author: Kai Lung <klung16@gmail.com>
+Date:   Mon Jun 19 20:45:03 2017 -0700
+
+    Set up map view in users/index
+
+[33mcommit 5c2980495080054a50e974195eab38cdb6af213a[m
+Author: Kai Lung <klung16@gmail.com>
+Date:   Mon Jun 19 20:24:15 2017 -0700
+
+    Configure database to have latitude and longitude columns
+
+[33mcommit 66ed8c28aadf7b5aa894af54216c63de6bbf0cf8[m
+Author: Kai Lung <klung16@gmail.com>
+Date:   Mon Jun 19 20:23:00 2017 -0700
+
+    Setup gemcoder and gmaps4rails gems
+
+[33mcommit 2a848b92d1992a895e8f07e71126f268c2796650[m
+Author: Kai Lung <klung16@gmail.com>
+Date:   Mon Jun 19 17:33:23 2017 -0700
+
+    Remove submit button from user/new view so that Pay with card is only button
+
+[33mcommit 9d0180436e02faaea43148b033cc00effac3aa15[m
+Author: Kai Lung <klung16@gmail.com>
+Date:   Mon Jun 19 17:30:17 2017 -0700
+
+    Added credit card form to user/new view
+
+[33mcommit 798d0fae4f41c500b0ab213b95961a5c62b5ad00[m
+Author: Kai Lung <klung16@gmail.com>
+Date:   Mon Jun 19 17:18:34 2017 -0700
+
+    Configure API keys to interact with Stripe
+
+[33mcommit b16d503bd3da7e5df7fa5bd639f101647d88cd26[m
+Author: Kai Lung <klung16@gmail.com>
+Date:   Mon Jun 19 17:17:22 2017 -0700
+
+    Added Stripe code to Users controller
+
+[33mcommit 5c05e9a862c4437369d6ade4b94504ab5fb6a302[m
+Author: Kai Lung <klung16@gmail.com>
+Date:   Mon Jun 19 16:54:55 2017 -0700
+
+    Set up gemfile so that we can use Stripe
+
+[33mcommit bc810620647accfc59f846e887463f46f82f9578[m
+Author: Kai Lung <klung16@gmail.com>
+Date:   Mon Jun 19 15:47:22 2017 -0700
+
+    Fixed so that it works when database is empty
+
+[33mcommit fbe7529db8fae0d58cfd1568abde1f2db51cd9fd[m
+Author: Kai Lung <klung16@gmail.com>
+Date:   Mon Jun 19 15:17:25 2017 -0700
+
+    Setup so index.html.erb becomes splash page
+
+[33mcommit e5181d6e07a6bfd48c04d3722325f6f15a8cb510[m
+Author: Kai Lung <klung16@gmail.com>
+Date:   Mon Jun 19 15:14:33 2017 -0700
+
+    Clean up UI on display information page
+
+[33mcommit 0f82184e00f92fe1ec9689ed0edccc8de11d382c[m
+Author: Kai Lung <klung16@gmail.com>
+Date:   Mon Jun 19 15:06:57 2017 -0700
+
+    Display user information on screen after form submission
+
+[33mcommit 0423cf8ef0df3ea16ed9965e3f0682acdf57b4a6[m
+Author: Kai Lung <klung16@gmail.com>
+Date:   Mon Jun 19 14:54:21 2017 -0700
+
+    Fix issue with redirection error after form submit
+
+[33mcommit eda90f3dd5229ff6d7e6023b50926929bacafba0[m
+Author: Kai Lung <klung16@gmail.com>
+Date:   Mon Jun 19 07:13:54 2017 -0700
+
+    Add new route for information
+
+[33mcommit d3a3bab80e60ea81de4d953a60eaeb71caca9660[m
+Author: Kai Lung <klung16@gmail.com>
+Date:   Mon Jun 19 07:09:59 2017 -0700
+
+    Created page which displays the user information after filling in form
+
+[33mcommit bec5292e9ddca1ed323ee52f8dd17b272ac87c2d[m
+Author: Kai Lung <klung16@gmail.com>
+Date:   Mon Jun 19 07:00:25 2017 -0700
+
+    Clean up UI a little bit
+
+[33mcommit c2a730e93db716fe5ada87e20d0ed4d43eecfbb2[m
+Author: Kai Lung <klung16@gmail.com>
+Date:   Mon Jun 19 06:51:36 2017 -0700
+
+    Fixed bug which was causing an ExecJS Error and app not running properly
+
+[33mcommit e654a03d8e7ebec56ee399ff3c97c290d5a0b302[m
+Author: Kai Lung <klung16@gmail.com>
+Date:   Mon Jun 19 06:26:48 2017 -0700
+
+    Added route to form page in routes.rb
+
+[33mcommit 05645a096e13b371729af6312f09e1690b0f99eb[m
+Author: Kai Lung <klung16@gmail.com>
+Date:   Mon Jun 19 06:25:26 2017 -0700
+
+    Created user information form page
+
+[33mcommit cce10ba4ca24ce1e7509cc44496e4f5f0288d1e9[m
+Author: Kai Lung <klung16@gmail.com>
+Date:   Mon Jun 19 06:22:06 2017 -0700
+
+    Implemented new and create methods of user controller
+
+[33mcommit 6a05dc1e0b7bba6645b371a34bb1f631b37e3743[m
+Author: Kai Lung <klung16@gmail.com>
+Date:   Mon Jun 19 06:18:33 2017 -0700
+
+    Set up database
+
+[33mcommit c49f11e08154bac32a7c8d43c53e9c3db0d3b5d3[m
+Author: Kai Lung <klung16@gmail.com>
+Date:   Mon Jun 19 06:17:55 2017 -0700
+
+    Created User model
+
+[33mcommit 8b2605c482696772359c8b97dcb95d5325d415cc[m
+Author: Kai Lung <klung16@gmail.com>
+Date:   Mon Jun 19 06:17:26 2017 -0700
+
+    Created Users controller
+
+[33mcommit 4cd6127ad71bfb12a42ca5b6336d8eed71db4222[m
+Author: Kai Lung <klung16@gmail.com>
+Date:   Mon Jun 19 05:26:58 2017 -0700
+
+    Initial commit
