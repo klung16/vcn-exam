@@ -6,7 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 # Declare ruby version
-ruby '2.3.3'
+ruby '2.4.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.1'
@@ -62,3 +62,6 @@ gem 'gmaps4rails'
 
 # Used for email validation
 gem 'validates_email_format_of'
+
+# Used for testing
+gem 'rspec-rails', '~> 3.6'
