@@ -7,14 +7,14 @@ class UsersController < ApplicationController
       marker.infowindow "#{user.name} - #{user.address}"
     end
   end
-  
+
   def new
     @user = User.new
   end
 
   def create
     @user = User.new(user_params)
-    
+
     if !(ValidatesEmailFormatOf::validate_email_format(@user.email).nil?)
       redirect_to "users/new"
     end
@@ -37,7 +37,7 @@ class UsersController < ApplicationController
       :description => 'Rails Stripe customer',
       :currency    => 'usd'
     )
-    
+
     #####
     # End of stripe code
     #####
@@ -45,7 +45,6 @@ class UsersController < ApplicationController
     if @user.save
       redirect_to "/users"
     end
- 
 
   rescue Stripe::CardError => e
     flash[:error] = e.message
