@@ -1,1 +1,1 @@
-web: PUBLISHABLE_KEY=pk_test_NoBFExfWzTBDNgOqPRFpKgbX SECRET_KEY=sk_test_IsATwsUHOgP8WusceGp6U5DW rails s
+web: rails s
