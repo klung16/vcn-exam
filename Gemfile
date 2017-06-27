@@ -60,3 +60,4 @@ gem 'rspec-rails', '~> 3.6'
 gem 'factory_girl_rails'
 gem 'nyan-cat-formatter'
 gem 'simplecov', :require => false
+gem 'rails-controller-testing'
