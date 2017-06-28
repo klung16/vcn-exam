@@ -2,7 +2,6 @@ require 'rails_helper'
 
 RSpec.describe "users/index", type: :view do
 
-
   context 'when the user is valid' do
     before (:each) do
       @user = FactoryGirl.create :user
