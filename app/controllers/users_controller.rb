@@ -15,10 +15,11 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
 
-    if !(ValidatesEmailFormatOf::validate_email_format(@user.email).nil?)
-      redirect_to "users/new"
+    if @user.save
+      redirect_to "/users"
+    else
+      render "/users/new"
     end
-
     ####
     # Stripe code from https://stripe.com/docs/checkout/rails
     #####
@@ -41,12 +42,6 @@ class UsersController < ApplicationController
     #####
     # End of stripe code
     #####
-
-    if @user.save
-      redirect_to "/users"
-    else
-      render "/users/new"
-    end
 
   rescue Stripe::CardError => e
     flash[:error] = e.message
