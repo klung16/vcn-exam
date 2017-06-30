@@ -32,7 +32,7 @@
       <span>Would you like to donate $5 to the Vancouver Community Network?</span>
     </label>
   </article>
-  <br/>
+<br>
 
 <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
           data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
@@ -40,3 +40,5 @@
           data-amount="500"
           data-locale="auto"></script>
 <% end %>
+<br>
+<%= link_to "No thanks!", "/users" %>
