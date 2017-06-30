@@ -15,6 +15,8 @@ RSpec.describe User, type: :model do
 
     context 'when the name is invalid' do
       it 'rejects the name' do
+        @user.name = "Ke$ha"
+        expect(@user).not_to be_valid
         @user.name = ""
         expect(@user).not_to be_valid
       end
