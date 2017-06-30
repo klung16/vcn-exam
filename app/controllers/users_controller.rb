@@ -44,6 +44,8 @@ class UsersController < ApplicationController
 
     if @user.save
       redirect_to "/users"
+    else
+      render "/users/new"
     end
 
   rescue Stripe::CardError => e

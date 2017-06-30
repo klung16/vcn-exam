@@ -1,11 +1,25 @@
 <h3>Enter the user information</h3>
 <hr>
 <%= form_for @user do |f| %>
-  Full Name: <%= f.text_field :name %> <br/><br/>
-  Email Address: <%= f.text_field :email %> <br/><br/>
-  Mailing Address: <%= f.text_field :address %> <br/><br/>
-  Message: <%= f.text_field :message %> <br/>
+  Full Name: <%= f.text_field :name %>
+  <% unless @user.errors[:name].blank? %>
+    <b>ERROR: Name can only have letters</b>
+  <% end %> <br/><br/>
 
+  Email Address: <%= f.text_field :email %>
+  <% unless @user.errors[:email].blank? %>
+    <b>ERROR: Email is invalid</b>
+  <% end %> <br><br>
+
+  Mailing Address: <%= f.text_field :address %>
+  <% unless @user.errors[:address].blank? %>
+    <b>ERROR: Address can't be blank</b>
+  <% end %> <br><br>
+
+  Message: <%= f.text_field :message %>
+  <% unless @user.errors[:message].blank? %>
+    <b>ERROR: Message can't be blank</b>
+  <% end %> <br>
 <hr>
   <article>
     <% if flash[:error].present? %>
